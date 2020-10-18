@@ -35,20 +35,6 @@ def turn(board)
 puts "Please enter 1-9:"
 input = gets.strip
 input_to_index(input)
-m = valid_move?(board, index)
-  if m == true
-    player = current_player(board)
-    move(board, index, player)
-  else m == nil
-    puts "Sorry, that was an invalid move. Please enter 1-9:"
-    display_board(board)
-    turn(board)
-    input = gets.strip
-    index = input_to_index(input)
-    m = valid_move?(board, index)
-  end
-end
+valid_move?(board, index)
 
-def current_player(board)
-  turn_count(board).even? ? "X" : "O"
 end
