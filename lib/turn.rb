@@ -18,6 +18,23 @@ def move(board, index, character)
   display_board(board)
 end
 
+def turn(board)
+  puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    m = valid_move?(board, index)
+  if m == true
+    character = current_player(board)
+    move(board, index, character)
+  else m == nil
+    puts "Sorry, that was an invalid move. Please enter 1-9:"
+    display_board(board)
+    # turn(board)
+    input = gets.strip
+    index = input_to_index(input)
+    m = valid_move?(board, index)
+  end
+end
 
 def input_to_index(input)
   input.to_i - 1
