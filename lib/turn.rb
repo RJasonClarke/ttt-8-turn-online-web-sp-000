@@ -66,6 +66,10 @@ def draw?(board)
   won?(board) == nil && full?(board) == true
 end
 
+def over?(board)
+  draw?(board) == true || won?(board) != nil
+end
+
 def input_to_index(input)
   input.to_i - 1
 end
