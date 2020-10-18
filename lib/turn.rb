@@ -31,6 +31,6 @@ end
 count
 end
 
-def turn
+def turn(board)
 
 end
