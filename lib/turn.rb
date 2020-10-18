@@ -1,6 +1,8 @@
 puts "Please enter 1-9:"
 
-input = gets
+def input
+  gets
+end
 
 
 
