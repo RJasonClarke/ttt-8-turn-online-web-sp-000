@@ -3,5 +3,5 @@ def input_to_index(input)
 end
 
 def display_board(board)
-  
+
 end
