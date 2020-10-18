@@ -30,3 +30,7 @@ board.each do |play|
 end
 count
 end
+
+def turn
+
+end
