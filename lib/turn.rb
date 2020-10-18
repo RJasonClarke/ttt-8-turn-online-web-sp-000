@@ -42,7 +42,7 @@ m = valid_move?(board, index)
   else m == nil
     puts "Sorry, that was an invalid move. Please enter 1-9:"
     display_board(board)
-    # turn(board)
+    turn(board)
     input = gets.strip
     index = input_to_index(input)
     m = valid_move?(board, index)
