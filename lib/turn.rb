@@ -36,6 +36,16 @@ def turn(board)
   end
 end
 
+def turn_count(board)
+count = 0
+board.each do |play|
+  if play == "X" || play == "O"
+  count += 1
+  end
+end
+count
+end
+
 def input_to_index(input)
   input.to_i - 1
 end
