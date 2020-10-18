@@ -70,6 +70,12 @@ def over?(board)
   draw?(board) == true || won?(board) != nil
 end
 
+def winner(board)
+  if won?(board) != nil
+    winner = board[won?(board)[0]]
+  end
+end
+
 def input_to_index(input)
   input.to_i - 1
 end
