@@ -1,6 +1,8 @@
 puts "Please enter 1-9:"
 
-user_input.gets
+def input
+  gets.chomp.to_i
+end
 
 def input_to_index(input)
   input.to_i - 1
