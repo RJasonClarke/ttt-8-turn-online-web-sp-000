@@ -1,4 +1,4 @@
-puts, "Please enter 1-9:"
+puts "Please enter 1-9:"
 
 
 def input_to_index(input)
