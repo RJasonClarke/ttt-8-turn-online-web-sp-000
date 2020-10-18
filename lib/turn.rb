@@ -1,7 +1,7 @@
 puts "Please enter 1-9:"
 
 def input
-  gets
+  gets.chomp
 end
 
 
