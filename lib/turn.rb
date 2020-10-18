@@ -50,6 +50,12 @@ def current_player(board)
   turn_count(board).even? ? "X" : "O"
 end
 
+def won?(board)
+  WIN_COMBINATIONS.find do |win_combination|
+    board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]] && position_taken?(board, win_combination[0])
+  end
+end
+
 def input_to_index(input)
   input.to_i - 1
 end
