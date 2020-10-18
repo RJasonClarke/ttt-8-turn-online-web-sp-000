@@ -20,3 +20,13 @@ def move(board, index, player)
   turn_count(board)
   display_board(board)
 end
+
+def turn_count(board)
+count = 0
+board.each do |play|
+  if play == "X" || play == "O"
+  count += 1
+  end
+end
+count
+end
