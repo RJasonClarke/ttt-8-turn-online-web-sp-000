@@ -58,7 +58,7 @@ end
 #Check for whether the input is a valid move
 def valid_move?(board, index)
 index.between?(0,8) && !position_taken?(board, index)
-en
+end
 
 def turn(board)
   puts "Please enter 1-9:"
